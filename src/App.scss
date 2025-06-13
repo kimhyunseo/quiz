@@ -1,0 +1,149 @@
+.app {
+  width: 420px;
+  height: 850px;
+  background-color: #e0e0e0;
+  border-radius: 1rem;
+}
+
+// Category
+.category {
+  height: 850px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h1 {
+    text-align: center;
+    font-size: 5rem;
+  }
+  .dodam{
+    font-size: 1rem;
+    color: #b2b2b2;
+    margin-top: 5rem;
+  }
+}
+
+.category-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 380px;
+  button {
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    font-family: "SBAggro", sans-serif;
+    padding: 2rem 0;
+    width: 380px;
+    border: none;
+    background-color: #ffffff;
+  }
+}
+
+// Quiz page
+
+.quiz-page {
+  width: 420px;
+  height: 850px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .title {
+    width: 380px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.5;
+    padding-bottom: 1rem;
+
+    p {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+    h2 {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  }
+  .quiz-game {
+    background-color: #ffffff;
+    width: 380px;
+    padding: 2rem 0;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+    //질문
+    .question {
+      width: 350px;
+      font-size: 2rem;
+      overflow-wrap: anywhere;
+      word-break: keep-all;
+      margin-top: 10px;
+      font-weight: 700;
+      span {
+        color: #f55835;
+      }
+    }
+    .score {
+      margin: 5px 0;
+    }
+  }
+  .choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    button {
+      font-size: 1.5rem;
+      width: 350px;
+      border-radius: 0.5rem;
+      padding: 1.5rem 0.5rem;
+      border: none;
+      overflow-wrap: anywhere;
+      word-break: keep-all;
+      font-family: "SBAggro", sans-serif;
+      font-weight: 500;
+    }
+  }
+}
+.quiz-page .bottom{
+  display: flex;
+  width: 380px;
+  justify-content: space-around;
+  align-items: center;
+}
+.quiz-page .bottom{
+  .next-button{
+    font-family: "SBAggro", sans-serif;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0.8rem;
+  }
+  .result{
+    font-size: 2rem;
+    font-family: "SBAggro", sans-serif;
+    font-weight: 500;
+  }
+}
+.correct {
+  background-color: #4caf50;
+  color: white;
+}
+
+.wrong {
+  background-color: #f44336;
+  color: white;
+}
+
+button:disabled {
+  opacity: 0.8;
+}
